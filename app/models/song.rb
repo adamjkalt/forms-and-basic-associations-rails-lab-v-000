@@ -9,6 +9,8 @@ def genre_name=(name)
 end
 
 def genre_name
+  genre = Genre.find(name: name)
+  self.genre = genre
 end
 
 def artist_name
