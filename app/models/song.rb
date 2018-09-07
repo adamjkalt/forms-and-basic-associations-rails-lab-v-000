@@ -22,8 +22,13 @@ def artist_name=(name)
 end
 
 def note_contents=(notes)
-end
-
+    notes.each do |content|
+      if content.strip != ''
+        self.notes.build(content: content)
+      end
+    end
+  end
+  
 def note_contents
 end
 
