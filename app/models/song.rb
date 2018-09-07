@@ -6,7 +6,7 @@ has_many :notes
 def artist_name
 end
 
-def artist_name=()
+def artist_name=(name)
 end
 
 end
