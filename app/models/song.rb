@@ -9,11 +9,11 @@ def genre_name=(name)
 end
 
 def genre_name
-  genre_name = Genre.find(name: name)
+  self.genre = Genre.find(name: name)
 end
 
 def artist_name
-  artist_name = Artist.find(name: name)
+  self.artist = Artist.find(name: name)
 end
 
 def artist_name=(name)
