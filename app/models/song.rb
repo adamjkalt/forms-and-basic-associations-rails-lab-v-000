@@ -19,4 +19,10 @@ def artist_name=(name)
   self.artist = artist
 end
 
+def note_contents=(notes)
+end
+
+def note_contents
+end
+
 end
