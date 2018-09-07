@@ -24,7 +24,7 @@ end
 def note_contents=(notes)
     notes.each do |content|
       if content.strip != ''
-        self.notes.create(content: content)
+        self.notes.new(content: content)
       end
     end
   end
