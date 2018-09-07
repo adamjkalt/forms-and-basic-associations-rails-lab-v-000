@@ -28,7 +28,7 @@ def note_contents=(notes)
       end
     end
   end
-  
+
 def note_contents
 end
 
