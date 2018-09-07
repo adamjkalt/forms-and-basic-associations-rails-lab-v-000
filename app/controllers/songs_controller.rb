@@ -16,7 +16,7 @@ class SongsController < ApplicationController
   def create
     binding.pry
     @song = Song.new(song_params)
-    @song.genre = Genre.find_by_id
+    @song.genre = Genre.find_by_id(params["song"]["genre_id"])
     if @song.save
       redirect_to @song
     else
