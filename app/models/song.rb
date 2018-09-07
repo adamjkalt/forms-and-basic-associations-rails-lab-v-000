@@ -10,12 +10,10 @@ end
 
 def genre_name
   genre = Genre.find(name: name)
-  self.genre = genre
 end
 
 def artist_name
   artist = Artist.find(name: name)
-  self.artist = artist
 end
 
 def artist_name=(name)
