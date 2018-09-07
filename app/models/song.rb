@@ -29,7 +29,9 @@ def note_contents=(notes)
     end
   end
 
-def note_contents
+  def note_contents
+    self.notes.map(&:content)
+  end
 end
 
 end
