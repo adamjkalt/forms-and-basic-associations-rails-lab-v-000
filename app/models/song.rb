@@ -14,6 +14,8 @@ def genre_name
 end
 
 def artist_name
+  artist = Artist.find(name: name)
+  self.artist = artist
 end
 
 def artist_name=(name)
